@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'ZombieFont';
+    src: url('./assets/font/Zombie-6Y7AD.otf') format('opentype');
+}
+
+body {
+    font-family: 'ZombieFont', sans-serif;
+    background: #000000;
+    letter-spacing: 1px;
+    background-image: url("./assets/image/background.jpg");
+    background-size: 25rem;
+}
+
+.container {
+    background-image: url("./assets/image/Halloween-background.jpg");
+    background-position: center;
+    background-size: cover;
+    cursor: url("./assets/image/gun.png") 30 30, auto;
+}
+
+.container:active {
+
+    cursor: url("./assets/image/gun_fire.png") 30 30, auto;
+}
+
+.zombie {
+    /* transition: top 0.5s, left 0.5s; */
+    cursor: url("./assets/image/gun.png") 30 30, auto;
+}
+
+
+.zombie:active {
+    /* transition: top 0.5s, left 0.5s; */
+    cursor: url("./assets/image/gun_fire.png") 30 30, auto;
+}
+
+img:active {
+    -webkit-filter: drop-shadow(3px 5px 5px rgba(231, 6, 6, 0.5)) drop-shadow(3px 5px 5px rgba(1, 1, 1, 0.5));
+    filter: drop-shadow(3px 5px 5px rgba(249, 1, 1, 0.5)) drop-shadow(3px 5px 5px rgba(255, 0, 0, 0.5));
+}
